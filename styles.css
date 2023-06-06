@@ -12,7 +12,7 @@
 	justify-content: flex-end;
 	background-color: #333;
 	color: #fff;
-	padding: 1rem;
+	min-height: 7vh;
 }
 
 .navbar-links {
@@ -60,6 +60,36 @@
 	margin: 1rem;
 }
 
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 93vh;
+	padding: 5rem;
+}
+
+section img {
+	width: 30%;
+	height: auto;
+	border-radius: 1rem;
+	flex: 1;
+}
+
+.section-text {
+	flex: 2;
+	margin: 2rem;
+}
+
+h1 {
+	margin: 0.5rem 0;
+}
+
+.section-container {
+	display: flex;
+	align-items: center;
+	max-width: 1024px;
+}
+
 @media all and (max-width: 768px) {
 	.navbar {
 		display: flex;
@@ -89,5 +119,25 @@
 		align-self: flex-start;
 		justify-self: flex-start;
 		display: block;
+	}
+
+	section {
+		padding: 2rem;
+	}
+
+	.section-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1024px;
+	}
+
+	.section-container img {
+		width: 60%;
+		order: -1;
+	}
+
+	.section-container h1 {
+		text-align: center;
 	}
 }

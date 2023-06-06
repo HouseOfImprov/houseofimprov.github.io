@@ -19,6 +19,6 @@ function handleClick(link) {
 	) {
 		setTimeout(() => {
 			navList.classList.toggle("active");
-		}, 150);
+		}, 200);
 	}
 }
