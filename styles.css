@@ -109,6 +109,40 @@ section img {
 	max-width: 75vw;
 }
 
+#hire {
+	padding: 2rem;
+	background-image: url("media/hire2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90vh;
+}
+#hire h1 {
+	color: white;
+}
+
+.overlay {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.685);
+	padding: 2rem;
+	border-radius: 3rem;
+}
+
+.contact-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25vh;
+	width: 50vw;
+	background-color: var(--lightblue);
+	border-radius: 3rem;
+}
+
+footer {
+	background-color: black;
+	height: 10vh;
+}
+
 @media all and (max-width: 768px) {
 	.navbar {
 		display: flex;
