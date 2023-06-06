@@ -89,7 +89,7 @@ h1 {
 .section-container {
 	display: flex;
 	align-items: center;
-	max-width: 1024px;
+	max-width: 75vw;
 }
 
 @media all and (max-width: 768px) {
