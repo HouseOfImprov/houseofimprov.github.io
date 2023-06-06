@@ -11,9 +11,6 @@ navLinks.forEach((navLink) => {
 });
 
 function handleClick(link) {
-	navLinks.forEach((navLink) => {
-		navLink.classList.toggle("active", navLink === link);
-	});
 	if (
 		window.getComputedStyle(hamburger).getPropertyValue("display") === "block"
 	) {
