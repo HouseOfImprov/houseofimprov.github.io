@@ -2,14 +2,14 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 	document.querySelector(".navbar-links").classList.toggle("active");
 });
 
-var navbarLinks = document.querySelectorAll(".navbar-links li a");
-navbarLinks.forEach((navLink) => {
+const navLinks = document.querySelectorAll(".navbar-links li a");
+
+navLinks.forEach((navLink) => {
 	navLink.addEventListener("click", () => handleClick(navLink));
 });
 
 function handleClick(link) {
-	navbarLinks.forEach((navLink) => {
-		navLink.classList.remove("active");
+	navLinks.forEach((navLink) => {
+		navLink.classList.toggle("active", navLink === link);
 	});
-	link.classList.add("active");
 }
