@@ -14,10 +14,6 @@
 	font-family: sans-serif;
 }
 
-body {
-	scroll-behavior: smooth;
-}
-
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -56,12 +52,18 @@ body {
 	margin-bottom: 5px;
 }
 
+main {
+	color: var(--white);
+	background-color: var(--grey);
+}
+
 .hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--black);
-	height: 90vh;
+	height: 100vh;
+	width: 100%;
 }
 
 .hero img {
@@ -76,8 +78,6 @@ section {
 	justify-content: center;
 	min-height: 93vh;
 	padding: 5rem;
-	color: var(--white);
-	background-color: var(--grey);
 }
 
 section img {
@@ -94,10 +94,7 @@ section img {
 
 .section-text h1 {
 	color: var(--lightblue);
-}
-
-h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	margin: 0.5rem 0;
 }
 
@@ -154,5 +151,12 @@ h1 {
 
 	.section-container h1 {
 		text-align: center;
+	}
+}
+
+@media all and (max-width: 425px) {
+	.hero img {
+		width: 80%;
+		height: auto;
 	}
 }
