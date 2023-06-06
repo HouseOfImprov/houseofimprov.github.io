@@ -8,15 +8,15 @@
 
 /* Reset default styles */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
 }
 
 *,
 html {
 	scroll-behavior: smooth !important;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
 }
 
 .navbar {
@@ -81,8 +81,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 93vh;
-	padding: 5rem;
+	padding: 3rem;
 }
 
 section img {
@@ -98,6 +97,7 @@ section img {
 }
 
 .section-text h1 {
+	text-align: center;
 	color: var(--lightblue);
 	font-size: 3rem;
 	margin: 0.5rem 0;
@@ -152,10 +152,6 @@ section img {
 	.section-container img {
 		width: 60%;
 		order: -1;
-	}
-
-	.section-container h1 {
-		text-align: center;
 	}
 }
 
