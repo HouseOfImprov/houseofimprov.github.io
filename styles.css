@@ -14,6 +14,10 @@
 	font-family: sans-serif;
 }
 
+body {
+	scroll-behavior: smooth;
+}
+
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -93,7 +97,7 @@ section img {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 	margin: 0.5rem 0;
 }
 
