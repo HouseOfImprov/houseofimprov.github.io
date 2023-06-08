@@ -90,7 +90,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	padding: 3rem;
-	min-height: 60vh;
+	min-height: 80vh;
 }
 
 section img {
@@ -132,14 +132,26 @@ section img {
 	max-width: 75vw;
 }
 
-#hire {
+.photo-full {
 	padding: 2rem;
-	background-image: url("media/hire2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 90vh;
+	min-height: 85vh;
 }
+
+#jcr-show {
+	background-image: url("media/JCRShow.jpg");
+}
+
+#brighton {
+	background-image: url("media/Brighton.jpg");
+}
+
+#hire {
+	background-image: url("media/hire2.jpg");
+}
+
 #hire h1 {
 	color: white;
 }
