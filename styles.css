@@ -6,10 +6,6 @@
 	--darkblue: #010054;
 }
 
-/* Reset default styles */
-* {
-}
-
 *,
 html {
 	scroll-behavior: smooth !important;
