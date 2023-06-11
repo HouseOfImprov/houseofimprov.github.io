@@ -11,6 +11,7 @@ html {
 	scroll-behavior: smooth !important;
 	margin: 0;
 	padding: 0;
+	font-size: large;
 	box-sizing: border-box;
 	font-family: sans-serif;
 }
@@ -165,17 +166,39 @@ section img {
 
 .contact-form {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 25vh;
-	width: 50vw;
+	min-height: auto;
 	background-color: var(--lightblue);
-	border-radius: 3rem;
+}
+
+.contact-container {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-top: 0.5rem;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	margin: 0.2rem;
+}
+
+.contact-item a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.contact-item svg {
+	margin-right: 0.5rem;
 }
 
 footer {
 	background-color: black;
-	height: 10vh;
+	height: 5vh;
 }
 
 @media all and (max-width: 768px) {
@@ -229,4 +252,7 @@ footer {
 		width: 80%;
 		height: auto;
 	}
+}
+
+@media all and (min-width: 1024px) {
 }
