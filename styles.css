@@ -6,15 +6,12 @@
 	--darkblue: #010054;
 }
 
-/* Reset default styles */
-* {
-}
-
 *,
 html {
 	scroll-behavior: smooth !important;
 	margin: 0;
 	padding: 0;
+	font-size: large;
 	box-sizing: border-box;
 	font-family: sans-serif;
 }
@@ -64,6 +61,7 @@ main {
 
 .hero {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--black);
@@ -74,7 +72,18 @@ main {
 .hero img {
 	height: 40%;
 	width: auto;
-	margin: 1rem;
+	margin-bottom: 2rem;
+}
+
+.hero-quote {
+	font-family: "Times New Roman", Times, serif;
+	font-style: oblique;
+	font-size: 1.5rem;
+	margin-bottom: 0.3rem;
+}
+.source {
+	font-size: 0.8rem;
+	margin-bottom: 1.2rem;
 }
 
 section {
@@ -82,6 +91,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	padding: 3rem;
+	min-height: 80vh;
 }
 
 section img {
@@ -103,44 +113,92 @@ section img {
 	margin: 0.5rem 0;
 }
 
+.section-text h2 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.section-text p {
+	margin-bottom: 0.5rem;
+}
+
+.section-text a {
+	color: var(--lightblue);
+	font-weight: bold;
+}
+
 .section-container {
 	display: flex;
 	align-items: center;
 	max-width: 75vw;
 }
 
-#hire {
+.photo-full {
 	padding: 2rem;
-	background-image: url("media/hire2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 90vh;
+	min-height: 85vh;
 }
+
+#jcr-show {
+	background-image: url("media/JCRShow.jpg");
+}
+
+#brighton {
+	background-image: url("media/Brighton.jpg");
+}
+
+#hire {
+	background-image: url("media/hire2.jpg");
+}
+
 #hire h1 {
 	color: white;
 }
 
 .overlay {
-	width: 100%;
 	background-color: rgba(0, 0, 0, 0.685);
 	padding: 2rem;
 	border-radius: 3rem;
+	max-width: 700px;
 }
 
 .contact-form {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 25vh;
-	width: 50vw;
+	min-height: auto;
 	background-color: var(--lightblue);
-	border-radius: 3rem;
+}
+
+.contact-container {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-top: 0.5rem;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	margin: 0.2rem;
+}
+
+.contact-item a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.contact-item svg {
+	margin-right: 0.5rem;
 }
 
 footer {
 	background-color: black;
-	height: 10vh;
+	height: 5vh;
 }
 
 @media all and (max-width: 768px) {
@@ -194,4 +252,7 @@ footer {
 		width: 80%;
 		height: auto;
 	}
+}
+
+@media all and (min-width: 1024px) {
 }
